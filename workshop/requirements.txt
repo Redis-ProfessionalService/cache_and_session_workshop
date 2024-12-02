@@ -1,5 +1,5 @@
 Deprecated==1.2.13
-packaging==21.3
+packaging==24.1
 pyparsing==3.0.7
-redis==4.4.2
+redis==5.0.8
 wrapt==1.14.0
