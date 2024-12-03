@@ -33,7 +33,7 @@ class LoadSessions():
     def load_premade():
         redis = RedisConnection.get_client()
 
-        # a few predefined sessions so that everyone can get a tleast some of the same answers.
+        # a few predefined sessions so that everyone can get at least some of the same answers.
         # These all have single-digit session IDs so they're obvious.
         redis.json().set('session:1', Path.root_path(), '{"lastAccessed":1723573333,"creation":1723565555,"user": {"firstname":"Jane","lastname":"Appleseed"},"visited":["redis.io","www.discover.com"], "location": "-87.6403,41.8787", "cart":[{"itemId":"invictajolly","itemCost":68.99,"quantity":1}, {"itemId":"MacBook","itemCost":2990.99,"quantity":1}]}')
         redis.json().set('session:2', Path.root_path(), '{"lastAccessed":1723572020,"creation":1723561234,"user": {"firstname":"Jonny","lastname":"Appleseed"},"visited":["www.redis.io","www.example.com"], "location": "-87.6229,41.8988", "cart":[{"itemId":"roncowidget","itemCost":88.88,"quantity":1}, {"itemId":"blahblah","itemCost":45.67,"quantity":4}]}' )
